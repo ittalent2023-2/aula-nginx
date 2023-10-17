@@ -3,7 +3,7 @@ Vagrant.configure("2") do |config|
     server.vm.box = "ubuntu/focal64"
     server.vm.hostname = "server"
     config.vm.network "public_network"
-    server.vm.synced_folder "C:/Users/Viviana/it-talent/hackathon/data", "/data"
+    server.vm.synced_folder "C:/Users/Viviana/it-talent/aula-nginx/data", "/data"
     server.vm.provider "virtualbox" do |vb|
       vb.memory = "1024"
       vb.cpus = 2
